@@ -1,0 +1,22 @@
+﻿<html>
+
+<head>
+<title>Презентации</title>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" src="presentations.js"></script>
+</head>
+
+<body onkeydown="keyPress(event);">
+
+<!--Блок для презентации-->
+<div class='blockPresentation' id='1' ></div>
+<!--Конец блока для презентации-->
+
+<script>
+//вызов инициализации презентации
+loadPresentation(1,['21.jpg','22.jpg','23.jpg','24.png','next.png','21.jpg','22.jpg','23.jpg','24.png','next.png'],800,800);
+</script>
+
+</body>
+</html>

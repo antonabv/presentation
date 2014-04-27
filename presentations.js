@@ -1,11 +1,11 @@
 ﻿var img=new Array;var interval;var end_of_play=1;
 
-function loadPresentation(id,images,height,width){ //функция инициализации презентации, где id - идентификатор блока для презентации, images - массив изображений, height - высота блока, width - ширина блока.
+function loadPresentation(id,images,height,width){ //функция инициализации презентации, где id - идентификатор блока для презентации, images - массив изображений, height - высота блока(не обязательно), width - ширина блока (не обязательно).
 	if(!width){width='100%';}
 	if(!height){height=document.getElementsByTagName('body')[0].clientHeight-30;}
 	var innerBody="<div style='width:"+width+";height:"+height+";'><div class='expand' onclick='fullScreen("+id+");'></div><div class='showarea' id='"+id+"area'></div><div class='closemenu' id='"+id+"closeMenu' onclick='closeMenu("+id+");'></div><div class='menu' id='"+id+"menu' ><div class='forImage' style='width:"+((images.length)*102)+"px;'>";
 	for(var i=0;i<images.length;i++){innerBody+="<div class='menu oneImage' id='"+id+"img"+i+"' onclick='showImage("+id+","+i+");'><img class='menuImage'  src='"+images[i]+"' alt=''></div>";}
-	innerBody+="</div></div><div class='controlpanel'><div class='next strelki' onclick='nextSlide("+id+");'></div><div class='prev strelki' onclick='prevSlide("+id+");' ></div><div class='numslide' id='"+id+"num'></div><div class='play' id='"+id+"play'><div onclick='playSlides("+id+");'><img src='play.png' class='start_stop_img'>&nbsp;<span class='play_stop_text'>воспроизвести</span></div></div></div></div>";
+	innerBody+="</div></div><div class='controlpanel'><div class='next strelki' onclick='nextSlide("+id+");'></div><div class='prev strelki' onclick='prevSlide("+id+");' ></div><div class='numslide' id='"+id+"num'></div><div class='play' id='"+id+"play'><div onclick='playSlides("+id+");'><img src='Images/play.png' class='start_stop_img'>&nbsp;<span class='play_stop_text'>воспроизвести</span></div></div></div></div>";
 	document.getElementById(id).innerHTML=innerBody;
 	img[id]=new Array;
 	img[id]=images;
@@ -41,12 +41,12 @@ function prevSlide(id){ //функция переключения на пред�
 function playSlides(id){ //функция автоматического воспроизведения, где id - идентификатор блока для презентации.
 	clearInterval(interval);
 	interval=setInterval('nextSlide('+id+');',7000);
-	document.getElementById(id+'play').innerHTML="<div onclick='stopSlides("+id+");'><img src='stop.png' class='start_stop_img'>&nbsp;<span class='play_stop_text'>остановить</span></div>";
+	document.getElementById(id+'play').innerHTML="<div onclick='stopSlides("+id+");'><img src='Images/stop.png' class='start_stop_img'>&nbsp;<span class='play_stop_text'>остановить</span></div>";
 }
 
 function stopSlides(id){ //функция отмены автоматического воспроизведения, где id - идентификатор блока для презентации.
 	clearInterval(interval);
-	document.getElementById(id+'play').innerHTML="<div onclick='playSlides("+id+");'><img src='play.png' class='start_stop_img'>&nbsp;<span class='play_stop_text'>воспроизвести</span></div>";
+	document.getElementById(id+'play').innerHTML="<div onclick='playSlides("+id+");'><img src='Images/play.png' class='start_stop_img'>&nbsp;<span class='play_stop_text'>воспроизвести</span></div>";
 }
 
 function fullScreen(id){ //функция разворачивания слайда на весь экран, где id - идентификатор блока для презентации.

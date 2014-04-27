@@ -1,11 +1,11 @@
-﻿.expand{width:20px;height:20px;background-image:url('full.png');border:1px solid #ccc;border-radius:0px 0px 0px 3px;float:right;background-color:#f6f6f6;margin-right:-2px;}
+﻿.expand{width:20px;height:20px;background-image:url('Images/full.png');border:1px solid #ccc;border-radius:0px 0px 0px 3px;float:right;background-color:#f6f6f6;margin-right:-2px;}
 .showarea{width:100%;border:1px solid #ddd;height:80%;text-align:center;}
 .menu{width:100%;overflow-x:auto;overflow-y:hidden;height:107px;max-height:107px;border:1px solid #ccc;}
-.closemenu{width:100px;height:10px;margin:auto;background-color:#fff;background-image:url('bottom.png');border:1px solid #ccc;border-radius:3px 3px 0px 0px ;border-bottom:0px;margin-top:-12px;}
+.closemenu{width:100px;height:10px;margin:auto;background-color:#fff;background-image:url('Images/bottom.png');border:1px solid #ccc;border-radius:3px 3px 0px 0px ;border-bottom:0px;margin-top:-12px;}
 .controlpanel{width:100%;height:100px;background:#f6f6f6;padding-bottom:1px;border-bottom:1px solid #ddd;border-radius:0px 0px 5px 5px;}
 .strelki{width:25px;height:100%;border:1px solid #ddd;background-color:#f6f6f6;}
-.prev{border-radius:0px 0px 0px 5px;background-image:url('prev.png');float:left;}
-.next{border-radius:0px 0px 5px 0px;background-image:url('next.png');float:right;margin-right:-2px;}
+.prev{border-radius:0px 0px 0px 5px;background-image:url('Images/prev.png');float:left;}
+.next{border-radius:0px 0px 5px 0px;background-image:url('Images/next.png');float:right;margin-right:-2px;}
 .numslide{width:100px;height:13px;text-align:center;font-family:arial;font-size:13px;color:#777;margin:auto;border:1px solid #ccc;border-radius:0px 0px 6px 6px;margin-bottom:20px;padding-bottom:4px;border-top:0px;}
 .play{width:200px;height:13px;text-align:center;font-family:arial;font-size:13px;color:#777;margin:auto;border:1px solid #ccc;border-radius:6px;padding-bottom:4px;cursor:pointer;}
 .oneImage{width:100px;text-align:center;float:left;height:88px;border-top:0px solid #ccc;}
@@ -14,7 +14,7 @@
 .forImage{overflow-x:hidden;overflow-y:hidden;margin:auto;}
 .start_stop_img{margin-top:2px;}
 .play_stop_text{vertical-align:top;}
-.fullScreen{position:fixed;top:0px;left:0px;width:100%;height:100%;background-image:url('backImage.png');background-color:black;}
+.fullScreen{position:fixed;top:0px;left:0px;width:100%;height:100%;background-color:#000;}
 .dispNone{display:none;}
-.openMenu{background-image:url('top.png');}
+.openMenu{background-image:url('Images/top.png');}
 .blockPresentation{padding-bottom:56px;}
